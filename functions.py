@@ -1,6 +1,14 @@
+import sys
 
-def progress(i, len):
-	len10 = len // 10
-	if(i % (len10) == 0):
-		print(str(int(i / (len10))) + '0%', end=' ')
+def progress_perc(i, len):
+	len1 = len // 100
+	if(i % (len1) == 0):
+		print(str(int(i / (len1))) + '0%', end=' ')
 		sys.stdout.flush()
+
+def progress_dots(i, len):
+	len1 = len // 100
+	if(i % (len1) == 0):
+		print('.', end='')
+		sys.stdout.flush()
+
