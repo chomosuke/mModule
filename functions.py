@@ -22,3 +22,4 @@ def closest_factor(number, target):
                 else: # favor i as smaller percentage difference
                     return last_factor;
             last_factor = i
+    return number
